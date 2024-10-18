@@ -8,8 +8,8 @@ function About() {
   const isListInView = useInView(listRef, { triggerOnce: true });
 
   return (
-    <div className="about r overflow-hidden bg-slate-900 p-4 text-white ">
-      <div className=" inset-0 bg-blue-600 bg-opacity-30 md:top-0 md:py-5">
+    <div className="about r overflow-hidden bg-slate-900 px-2 py-4 text-white ">
+      <div className=" inset-0 bg-blue-600 bg-opacity-30 py-5 md:top-0">
         <motion.div
           ref={textRef}
           initial={{ opacity: 0, y: 50 }}
@@ -20,7 +20,7 @@ function About() {
           <h1 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Our Mission & Vision
           </h1>
-          <p className="mb-4 text-center text-lg">
+          <p className="mb-4 font-semibold md:text-center md:text-lg ">
             At Shamzbridge, we believe in harnessing the power of human
             resources to build a thriving workplace where innovation,
             collaboration, and growth flourish.
@@ -63,7 +63,7 @@ function About() {
           className="px-6 md:px-12"
         >
           <h1 className="mb-4 text-xl font-bold md:text-2xl">Meet Our Team</h1>
-          <p className="mb-2 text-center text-lg">
+          <p className="mb-4  font-semibold md:text-center md:text-lg ">
             Our dedicated team of HR professionals is here to support you every
             step of the way.
           </p>
