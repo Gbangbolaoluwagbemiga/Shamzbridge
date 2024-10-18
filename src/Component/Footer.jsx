@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-green-900 py-10 text-white">
+    <footer className="footer bg-slate-900 py-10 text-white">
       <div className="container mx-auto px-6">
         <div className="mb-6 flex flex-col items-center">
           <h3 className="text-2xl font-bold">Shamzbridge</h3>
@@ -13,17 +13,26 @@ const Footer = () => {
             <h4 className="mb-2 text-lg font-semibold">Quick Links</h4>
             <ul>
               <li>
-                <a href="#about" className="hover:text-gray-300">
+                <a
+                  href="#about"
+                  className="transition duration-150 hover:text-blue-400"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-gray-300">
+                <a
+                  href="#services"
+                  className="transition duration-150 hover:text-blue-400"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-gray-300">
+                <a
+                  href="#contact"
+                  className="transition duration-150 hover:text-blue-400"
+                >
                   Contact
                 </a>
               </li>

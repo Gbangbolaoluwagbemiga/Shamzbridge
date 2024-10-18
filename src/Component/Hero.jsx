@@ -19,7 +19,7 @@ function Header() {
   };
 
   return (
-    <div className="home relative h-screen w-full overflow-hidden bg-gray-900">
+    <div className="hero relative h-screen w-full overflow-hidden bg-gray-900">
       <video
         className="absolute inset-0 h-full w-full object-cover"
         src={BackgroundVideo} // Ensure this video is appropriate for a professional HR context

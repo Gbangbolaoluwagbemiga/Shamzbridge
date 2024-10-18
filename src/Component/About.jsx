@@ -1,6 +1,5 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-// import Hero from "../assets/Img/DM_PlayerHero.jpg"; // Ensure the image path is correct
 
 function About() {
   const textRef = useRef(null);
@@ -9,11 +8,8 @@ function About() {
   const isListInView = useInView(listRef, { triggerOnce: true });
 
   return (
-    <div
-      className="about relative h-[47rem] overflow-hidden bg-cover bg-center bg-no-repeat p-4 text-white md:h-screen"
-      //   style={{ backgroundImage: `url(${Hero})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-50 md:top-0 md:py-5">
+    <div className="about r overflow-hidden bg-slate-900 p-4 text-white ">
+      <div className=" inset-0 bg-blue-600 bg-opacity-30 md:top-0 md:py-5">
         <motion.div
           ref={textRef}
           initial={{ opacity: 0, y: 50 }}
