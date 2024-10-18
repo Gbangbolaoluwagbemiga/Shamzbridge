@@ -41,20 +41,20 @@ const Header = () => {
         style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}
       >
         <div className=" w-full items-center justify-between bg-green-900 px-5 py-4 md:flex md:px-10 md:py-0 md:pb-2">
-          <div className="z-[100] cursor-pointer pt-2 text-[22px] font-bold text-[#AE2C5D]">
+          <div className=" cursor-pointer pt-2 text-[22px] font-bold text-[#AE2C5D]">
             <p className="font-bold">Shamzbridge</p>
           </div>
 
           <div
             onClick={() => setOpen(!open)}
-            className="absolute right-8 top-6 z-[100] cursor-pointer text-3xl font-[600px] text-white md:hidden"
+            className="absolute right-8 top-6 cursor-pointer text-3xl font-[600px] text-white md:hidden"
           >
             <ion-icon name={open ? "close" : "menu"}></ion-icon>
           </div>
 
           <ul
             className={`absolute left-0 w-full bg-stone-900 pb-6 pl-8 text-white opacity-[100] transition-all duration-500 ease-in md:static md:z-auto md:ms-auto md:flex md:w-[30rem] md:items-center md:pb-0 md:pl-0 lg:w-auto ${
-              open ? "top-[60px]" : "-top-[490px] -z-[50]"
+              open ? "top-[61px] z-auto" : "-top-[490px] -z-[50]"
             } ${isSticky ? "-z-10" : "z-10"}`}
           >
             {Links.map((link, index) => (
