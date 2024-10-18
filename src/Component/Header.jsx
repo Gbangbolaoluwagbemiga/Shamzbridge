@@ -33,8 +33,8 @@ const Header = () => {
     <div>
       <div
         ref={headerRef}
-        className={`transition-all duration-700 ${
-          open && "h-full"
+        className={`transition-all duration-500 ${
+          open ? "h-[20rem]" : "h-16"
         } z-[100] w-full overflow-hidden bg-slate-800 text-white shadow-md ${
           isSticky ? "fixed left-0 right-0 top-0" : ""
         }`}
